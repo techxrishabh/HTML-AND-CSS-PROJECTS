@@ -58,6 +58,31 @@ h4 {
   text-transform: capitalize;
 }
 /*More global css*/
+/*======================= DANGER =======================*/
+/*============ Clear Floats (Clearfix) ALSO KNOWN AS CLEARFIX HACK =============*/
+.clearfix::after,
+.clearfix::before {
+  content: ""; /* FOR SKILL SECTION */
+  clear: both;
+  display: table;
+}
+.section-title h3 {
+  font-family: var(--ff-secondry);
+  color: var(--clr-primary);
+}
+.section-title {
+  margin-bottom: 2.5rem;
+}
+.section-center {
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.about-picture-container {
+  /* width: 85vw; */
+}
+/*======================= DANGER =======================*/
 
 /*
 ==========================
@@ -99,6 +124,12 @@ Header
   margin-top: 1.25rem;
   margin-bottom: 2rem;
 }
+.banner-btn {
+  outline: 0.125rem solid var(--clr-primary);
+  outline-offset: 0.25rem;
+  font-size: 1.25rem;
+  padding: 1rem 1.75rem;
+}
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary);
@@ -117,22 +148,6 @@ Header
   background: var(--clr-primary-light);
 }
 
-/*======================= DANGER =======================*/
-/*============ Clear Floats (Clearfix) ALSO KNOWN AS CLEARFIX HACK =============*/
-.clearfix::after,
-.clearfix::before {
-  content: ""; /* FOR SKILL SECTION */
-  clear: both;
-  display: table;
-}
-/*======================= DANGER =======================*/
-
-.banner-btn {
-  outline: 0.125rem solid var(--clr-primary);
-  outline-offset: 0.25rem;
-  font-size: 1.25rem;
-  padding: 1rem 1.75rem;
-}
 /*
 =======================================================
 HEADER ____ END
@@ -171,6 +186,7 @@ SKILLS       ========
   padding: 2.5rem 0;
   text-align: center;
   transition: var(--transition);
+  height: 255px;
 }
 .skill-icon {
   color: var(--clr-primary);
@@ -216,5 +232,44 @@ SKILLS       ========
   .skill {
     float: left;
     width: 25%;
+  }
+}
+
+/*
+================================================
+ABOUT SECTION ====================================================================
+================================================================
+*/
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+.about-picture-container {
+  background: var(--clr-primary);
+  border: 0.5rem solid var(--clr-primary);
+  max-width: 30rem;
+  overflow: hidden;
+}
+.about-picture {
+  transition: var(--transition);
+}
+.about-picture-container:hover .about-picture {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+.about-picture-container:hover {
+  border: 0.5rem solid var(--clr-primary-light);
+}
+.about-text {
+  margin-bottom: 1.5rem;
+  color: var(--clr-grey-5);
+  max-width: 26rem;
+}
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
+    float: left;
+    width: 50%;
+    padding-left: 2rem;
   }
 }
