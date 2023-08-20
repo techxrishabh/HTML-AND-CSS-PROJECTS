@@ -88,6 +88,9 @@ Header
   color: var(--clr-primary);
   font-family: var(--ff-secondry);
 }
+.banner h2:hover {
+  color: var(--clr-primary-light);
+}
 .banner h1 {
   color: var(--clr-white);
   font-family: var(--ff-primary);
@@ -113,9 +116,105 @@ Header
   color: var(--clr-primary);
   background: var(--clr-primary-light);
 }
+
+/*======================= DANGER =======================*/
+/*============ Clear Floats (Clearfix) ALSO KNOWN AS CLEARFIX HACK =============*/
+.clearfix::after,
+.clearfix::before {
+  content: ""; /* FOR SKILL SECTION */
+  clear: both;
+  display: table;
+}
+/*======================= DANGER =======================*/
+
 .banner-btn {
   outline: 0.125rem solid var(--clr-primary);
   outline-offset: 0.25rem;
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
+}
+/*
+=======================================================
+HEADER ____ END
+==========================
+*/
+
+/*content-divider*/
+.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    var(--clr-primary),
+    #e9b949,
+    var(--clr-primary)
+  );
+}
+.content-divider:hover {
+  height: 1rem;
+  background: linear-gradient(
+    to left,
+    var(--clr-primary-light),
+    #eac46b,
+    var(--clr-primary-light)
+  );
+}
+
+/*
+============================================
+SKILLS       ========
+=============================
+*/
+.skills {
+  background: var(--clr-grey-10);
+}
+.skill {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--transition);
+}
+.skill-icon {
+  color: var(--clr-primary);
+  font-size: 2.5rem;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  transition: var(--transition);
+}
+.skill-text {
+  color: var(--clr-grey-5);
+  max-width: 17rem; /* IMPORTANT*/
+  margin: 0 auto;
+}
+.skill-title {
+  margin-bottom: 1rem;
+}
+/* Important */
+.skill:hover {
+  background: var(--clr-white);
+  box-shadow: 0px 2px var(--clr-primary);
+  color: var(--clr-primary);
+}
+/*For lifting up the icon*/
+.skill:hover .skill-icon {
+  transform: translateY(-5px);
+}
+.skill-icon:hover {
+  color: var(--clr-primary-light);
+}
+
+/* MEDIA-QUERY FOR TWO COLUMN LAYOUT AFTER 576PX */
+
+@media screen and (min-width: 576px) {
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+
+/* MEDIA-QUERY FOR TWO COLUMN LAYOUT AFTER 1200PX */
+
+@media screen and (min-width: 1200px) {
+  .skill {
+    float: left;
+    width: 25%;
+  }
 }
