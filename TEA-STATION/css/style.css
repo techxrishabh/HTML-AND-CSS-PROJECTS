@@ -26,6 +26,7 @@ Variables
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 2px solid black;
 }
 a {
   text-decoration: none;
@@ -271,5 +272,58 @@ ABOUT SECTION ==================================================================
     float: left;
     width: 50%;
     padding-left: 2rem;
+  }
+}
+/*
+================================================
+PRODUCTS >>>>>>>>>>>>>>>>> ====================================================================
+================================================================
+*/
+
+.products {
+  background: var(--clr-grey-10);
+}
+.products article {
+  padding: 2rem 0;
+}
+.product-text {
+  margin-bottom: 1.5rem;
+  color: var(--clr-grey-5);
+  max-width: 26rem;
+}
+.product-img {
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  height: 17rem;
+  object-fit: cover;
+}
+.product-price {
+  color: var(--clr-primary);
+  margin-bottom: 2rem;
+}
+.product-title {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .product {
+    float: left;
+    width: 50%;
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .product {
+    float: right;
+    width: 33.3%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-info {
+    width: 30%;
+    float: left;
+  }
+  .products-inventory {
+    width: 70%;
+    float: right;
   }
 }
