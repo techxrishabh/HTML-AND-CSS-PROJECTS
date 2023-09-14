@@ -586,3 +586,12 @@ _____________________________________________________________________________
     max-width: 20rem;
   }
 }
+.navbar {
+  transform: translateX(-100%);
+  transition: var(
+    --transition
+  ); /* sliding effect when we close and start the hamburger sign */
+}
+.showNav {
+  transform: translate(0%);
+}
