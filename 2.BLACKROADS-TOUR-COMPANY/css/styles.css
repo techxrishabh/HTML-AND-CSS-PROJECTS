@@ -202,6 +202,43 @@ h1 {
 About
 ===============
 */
+#about {
+}
+.section-title {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.color {
+  color: var(--clr-primary-5);
+  font-weight: bold;
+}
+.section {
+  padding: 80px 0;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.about-img {
+  margin: 32px 0;
+}
+.btn-2 {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: var(--clr-primary-7);
+}
+@media screen and (min-width: 992px) {
+  .main-about-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-img {
+    margin: 0 0 0;
+    align-self: flex-start;
+    align-items: center;
+  }
+}
 /* section add to globals */
 /* title add to globals */
 /* section center add to globals */
