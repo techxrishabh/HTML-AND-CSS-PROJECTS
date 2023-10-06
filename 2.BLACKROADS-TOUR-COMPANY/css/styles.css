@@ -157,6 +157,46 @@ Navbar
 Hero
 ===============
 */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-primary-5);
+}
+.hero-banner {
+  text-align: center;
+  color: var(--clr-white);
+  padding: o 3rem;
+}
+.hero-banner p {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: var(--spacing);
+  color: var(--clr-white);
+}
+h1 {
+  text-transform: uppercase;
+}
+.btn {
+  background-color: #ffff;
+  color: var(--clr-primary-5);
+  font-size: 1.25rem;
+  padding: 0.9rem 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgb(44, 174, 186, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("/2.BLACKROADS-TOUR-COMPANY/img/main.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
 /*
 =============== 
 About
