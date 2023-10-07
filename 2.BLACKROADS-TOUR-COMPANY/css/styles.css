@@ -225,20 +225,34 @@ About
 }
 .btn-2 {
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 22px;
   background-color: var(--clr-primary-7);
+  text-transform: uppercase;
+  font-weight: 400px;
+  letter-spacing: var(--spacing);
+  color: var(--clr-white);
+  border: none;
 }
 @media screen and (min-width: 992px) {
   .main-about-section {
     display: flex;
     justify-content: space-between;
+    gap: 50px;
   }
   .about-img {
     margin: 0 0 0;
-    align-self: flex-start;
-    align-items: center;
+    align-self: center;
+  }
+  .section-img {
+    height: 100%;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .section {
   }
 }
+
 /* section add to globals */
 /* title add to globals */
 /* section center add to globals */
