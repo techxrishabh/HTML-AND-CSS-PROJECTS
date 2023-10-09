@@ -51,7 +51,8 @@ Global Styles
 ===============
 */
 
-* {
+*::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -252,7 +253,21 @@ About
   .section {
   }
 }
-
+@media screen and (min-width: 1170px) {
+  .section-img::before {
+    content: "";
+    position: absolute;
+    border: 5px solid var(--clr-primary-5);
+    width: 100%;
+    height: 100%;
+    top: -1.5rem;
+    right: 1.5rem;
+    z-index: -1;
+  }
+  .section-img {
+    position: relative;
+  }
+}
 /* section add to globals */
 /* title add to globals */
 /* section center add to globals */
