@@ -57,9 +57,7 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
-* {
-  border: 2px solid black;
-}
+
 body {
   font-family: var(--ff-primary);
   background: var(--clr-white);
@@ -293,6 +291,7 @@ Services
   text-align: center;
   width: 95%;
   margin: 0 auto;
+  max-width: 1170px;
 }
 
 .icon-pack {
