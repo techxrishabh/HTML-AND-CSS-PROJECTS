@@ -289,9 +289,13 @@ Services
 }
 .services-center {
   text-align: center;
-  width: 95%;
+
   margin: 0 auto;
+  /* max-width: 1170px; */
+}
+.about-services {
   max-width: 1170px;
+  margin: 0 auto;
 }
 
 .icon-pack {
