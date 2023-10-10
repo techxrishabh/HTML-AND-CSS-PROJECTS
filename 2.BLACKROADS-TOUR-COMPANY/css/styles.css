@@ -410,6 +410,27 @@ button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: var(--transition);
 }
+.about-featured-tour {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 95vw;
+}
+@media screen and (min-width: 768px) {
+  .about-featured-tour {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 95vw;
+  }
+  .tour-1 {
+    flex: 0 0 calc(50% - 5rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .tour-1 {
+    flex: 0 0 calc(33.333% - 5rem);
+  }
+}
 /*
 =============== 
 Contact
