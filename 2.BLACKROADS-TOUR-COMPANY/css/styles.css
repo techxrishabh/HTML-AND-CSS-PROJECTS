@@ -374,6 +374,42 @@ Featured Tours
 ===============
 */
 
+.tour-1 {
+  background-color: var(--clr-grey-10);
+  margin-bottom: 40px;
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+}
+.tour-1:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(1.02);
+}
+.bot-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.bot-icons span {
+  font-size: 9px;
+  letter-spacing: 0.2rem;
+}
+.bot-btn {
+  display: flex;
+  justify-content: center;
+}
+button {
+  text-transform: uppercase;
+  background-color: var(--clr-primary-5);
+  color: var(--clr-white);
+  padding: 0.5rem 1rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
 /*
 =============== 
 Contact
