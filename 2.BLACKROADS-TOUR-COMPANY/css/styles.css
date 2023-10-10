@@ -292,10 +292,14 @@ Services
 
   margin: 0 auto;
   /* max-width: 1170px; */
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 .about-services {
   max-width: 1170px;
   margin: 0 auto;
+}
+.section-title {
 }
 
 .icon-pack {
