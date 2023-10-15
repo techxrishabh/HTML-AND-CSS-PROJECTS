@@ -499,8 +499,7 @@ Gallery
 */
 .gallery-container {
   position: relative;
-  border: 5px solid red;
-  background-color: #88ebf2;
+  background: var(--clr-primary-5);
 }
 .gallery-icon {
   position: absolute;
@@ -509,27 +508,23 @@ Gallery
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 2rem;
-  /* opacity: 0; */
+  opacity: 0;
   cursor: pointer;
   transition: var(--transition);
 }
 .gallery-image {
-  object-fit: cover;
-  background-size: cover;
-  transition: var(--transition);
   height: 17rem;
-  border: 2px solid black;
+  object-fit: cover;
+  transition: var(--transition);
 }
-.gallery-image {
-}
-/* .gallery-container:hover .gallery-img {
-  opacity: 0.9;
+.gallery-container:hover .gallery-image {
+  opacity: 0.5;
 }
 .gallery-container:hover .gallery-icon {
   opacity: 1;
-} */
-/*
-=============== 
+}
+
+/* =============== 
 Footer
 ===============
 */
