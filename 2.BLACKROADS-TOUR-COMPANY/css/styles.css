@@ -441,6 +441,9 @@ button {
 Contact
 ===============
 */
+.mail-update {
+  margin-top: 30px;
+}
 .mail-section {
   margin-top: 40px;
   background-color: var(--clr-primary-6);
