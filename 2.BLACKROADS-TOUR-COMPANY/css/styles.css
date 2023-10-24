@@ -486,6 +486,10 @@ Contact
 .mail-update {
   max-width: 70%;
 }
+.mail-contact {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 
 @media screen and (min-width: 992px) {
   .mail-contact {
