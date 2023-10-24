@@ -411,17 +411,18 @@ button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: var(--transition);
 }
-.about-featured-tour {
-  max-width: 1170px;
+/* .about-featured-tour {
+  max-width: 1000px;
   margin: 0 auto;
   width: 95vw;
-}
+} */
 @media screen and (min-width: 768px) {
   .about-featured-tour {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 95vw;
+    max-width: 1170px;
+    margin: 0 auto;
   }
   .tour-1 {
     flex: 0 0 calc(50% - 5rem);
