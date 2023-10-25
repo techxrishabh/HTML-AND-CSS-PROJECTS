@@ -155,6 +155,48 @@ p {
 Navbar
 ===============
 */
+.header {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  justify-content: space-around;
+}
+.header ul {
+  display: flex;
+  text-transform: capitalize;
+  font-size: 16px;
+  cursor: pointer;
+}
+.header ul li {
+  margin-left: 10px;
+}
+.non {
+  font-weight: 900;
+  /* font-size: 16px; */
+}
+.icon-font {
+  font-size: 16px;
+  cursor: pointer;
+}
+header h2,
+nav,
+.icon-font {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: var(--spacing);
+}
+header i {
+  margin-left: 10px;
+}
+header nav li:hover {
+  color: var(--clr-primary-5);
+}
+i:hover {
+  color: var(--clr-primary-8);
+}
 /*
 =============== 
 Hero
