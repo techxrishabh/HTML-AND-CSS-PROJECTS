@@ -157,12 +157,14 @@ Navbar
 */
 .header {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: #fff;
   justify-content: space-around;
+  box-shadow: var(--dark-shadow);
+  z-index: 2;
 }
 .header ul {
   display: flex;
