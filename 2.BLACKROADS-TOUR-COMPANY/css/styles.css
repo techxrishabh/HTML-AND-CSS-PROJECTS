@@ -636,3 +636,9 @@ footer li {
   margin: 5px;
   color: #fff;
 }
+footer li:hover {
+  color: var(--clr-primary-5);
+}
+footer i:hover {
+  color: var(--clr-primary-5);
+}
