@@ -72,7 +72,7 @@ ul {
 a {
   text-decoration: none;
 }
-img {
+img:not(.nav-logo) {
   width: 100%;
   display: block;
 }
@@ -155,7 +155,52 @@ p {
 Navbar
 ===============
 */
-
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-white);
+  width: 100%;
+  box-shadow: var(--dark-shadow);
+  z-index: 2;
+}
+.icon-font {
+  display: none;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+#burger {
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+.special-btn {
+  border: none;
+  transition: var(--transition);
+  cursor: pointer;
+  color: var(--clr-primary-5);
+}
+.special-btn:hover {
+  transform: scale(1.2);
+}
+/* .nav-center{
+  display: flex;
+} */
+.nav-links li {
+  display: block;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  color: var(--clr-grey-1);
+  cursor: pointer;
+  letter-spacing: var(--spacing);
+}
+.nav-links li:hover {
+  background-color: var(--clr-primary-8);
+  padding-left: 2.25rem;
+}
 /*
 =============== 
 Hero
@@ -401,7 +446,7 @@ Featured Tours
   display: flex;
   justify-content: center;
 }
-button {
+button:not(.special-btn) {
   text-transform: uppercase;
   background-color: var(--clr-primary-5);
   color: var(--clr-white);
