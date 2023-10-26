@@ -189,6 +189,9 @@ Navbar
 /* .nav-center{
   display: flex;
 } */
+.nav-links li a {
+  color: var(--clr-grey-1);
+}
 .nav-links li {
   display: block;
   padding: 1rem 2rem;
@@ -200,6 +203,15 @@ Navbar
 .nav-links li:hover {
   background-color: var(--clr-primary-8);
   padding-left: 2.25rem;
+}
+/*-------------- 280px ----------*/
+.close-nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.open-nav-links {
+  height: 280px;
 }
 /*
 =============== 
