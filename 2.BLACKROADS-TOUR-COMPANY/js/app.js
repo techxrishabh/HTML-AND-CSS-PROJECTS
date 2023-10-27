@@ -33,15 +33,3 @@ scrollLinks.forEach((link) => {
     });
   });
 });
-
-// **** ----------SMOOTH-------------SCROLL------------ ****
-
-const homeSection = document.querySelector(".home-link");
-const aboutSection = document.querySelector(".about-link");
-const servicesSection = document.querySelector(".services-link");
-const featuredSection = document.querySelector(".featured-link");
-const gallerySection = document.querySelector(".gallery-link");
-
-document.querySelector(".home-link").addEventListener("click", () => {
-  heroSection.scrollIntoView({behavior: "smooth"});
-});
