@@ -50,7 +50,9 @@ Variables
 Global Styles
 ===============
 */
-
+html {
+  scroll-behavior: smooth;
+}
 *,
 ::before,
 ::after {
@@ -191,15 +193,14 @@ Navbar
 } */
 .nav-links li a {
   color: var(--clr-grey-1);
-}
-.nav-links li {
-  display: block;
   padding: 1rem 2rem;
+  display: block;
   text-transform: capitalize;
   color: var(--clr-grey-1);
   cursor: pointer;
   letter-spacing: var(--spacing);
 }
+
 .nav-links li:hover {
   background-color: var(--clr-primary-8);
   padding-left: 2.25rem;
