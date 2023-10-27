@@ -214,6 +214,36 @@ Navbar
 .open-nav-links {
   height: 280px;
 }
+@media (min-width: 992px) {
+  .close-nav-links {
+    height: auto;
+    display: flex;
+  }
+  .icon-font {
+    display: inline-block;
+  }
+  .icon-font i {
+    margin-left: 10px;
+  }
+  .nav-links li:hover {
+    padding-left: 0;
+    background: transparent;
+  }
+
+  #ham-burger {
+    display: none;
+  }
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .nav-header {
+    padding: 0 0;
+  }
+}
 /*
 =============== 
 Hero
