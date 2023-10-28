@@ -700,7 +700,7 @@ footer li {
   margin: 5px;
   color: #fff;
 }
-footer li:hover {
+footer li a:hover {
   color: var(--clr-primary-5);
 }
 footer i:hover {
@@ -711,4 +711,7 @@ footer i:hover {
 }
 .contact-btn:hover {
   background-color: var(--clr-primary-2);
+}
+footer li a {
+  color: #fff;
 }
