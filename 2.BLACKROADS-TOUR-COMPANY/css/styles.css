@@ -221,6 +221,7 @@ Navbar
   }
   .icon-font {
     display: inline-block;
+    cursor: pointer;
   }
   .icon-font i {
     margin-left: 10px;
