@@ -239,10 +239,14 @@ Navbar
     align-items: center;
     max-width: 1170px;
     margin: 0 auto;
+    width: 90vw;
   }
   .nav-header {
     padding: 0 0;
   }
+}
+.nav-links li a {
+  padding: 1rem 1rem;
 }
 /*
 =============== 
