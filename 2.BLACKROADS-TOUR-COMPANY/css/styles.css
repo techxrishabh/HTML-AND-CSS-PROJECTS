@@ -706,3 +706,9 @@ footer li:hover {
 footer i:hover {
   color: var(--clr-primary-5);
 }
+.effect:hover {
+  background-color: var(--clr-primary-7);
+}
+.contact-btn:hover {
+  background-color: var(--clr-primary-2);
+}
