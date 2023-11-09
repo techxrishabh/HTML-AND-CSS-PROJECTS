@@ -84,3 +84,36 @@ button:hover a {
 button {
   margin: 3rem;
 }
+
+/*
+============
+Navbar
+============
+*/
+
+nav ul li {
+  padding: 20px;
+  list-style: none;
+  cursor: pointer;
+  letter-spacing: var(--mainSpacing);
+}
+nav ul li a {
+  color: var(--primaryColor);
+}
+nav {
+  background-color: var(--darkGrey);
+}
+nav ul li a:hover {
+  color: var(--mainBlack);
+}
+@media (min-width: 992px) {
+  nav ul {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .main-navbar {
+    text-align: center;
+  }
+}
