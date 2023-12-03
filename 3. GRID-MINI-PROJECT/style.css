@@ -117,3 +117,34 @@ nav ul li a:hover {
     text-align: center;
   }
 }
+.hero-header{
+  background-color: var(--primaryColor);
+  color: var(--mainWhite);
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  
+}
+.class-banner p{
+  width: 70%;
+  font-size: 1rem;
+  max-width: 560px;
+}
+@media screen and (max-width: 600px) {
+  .hero-banner{
+    padding: 0.3rem;
+  }
+  
+}
+@media screen and (min-width: 768px) {
+  .hero-header {
+    background-image: url("./images/size-image-2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.75));
+  }
+  
+}
