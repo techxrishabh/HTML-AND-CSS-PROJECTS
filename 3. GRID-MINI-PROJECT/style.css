@@ -148,3 +148,37 @@ nav ul li a:hover {
   }
   
 }
+
+/* ===================================
+                 CARDS
+=========================================== */ 
+
+.three-column{
+  text-align: center;
+}
+.cards-center{
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.layout-images{
+  border: 1px solid grey;
+  margin-top: 40px;
+}
+.card-info{
+  padding: 10px;
+}
+.card-footer{
+  background-color: var(--darkGrey);
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  justify-items: center;
+}
+.card-footer span{
+  color: var(--primaryColor);
+}
+.cards-header{
+  margin: 80px 0;
+}
