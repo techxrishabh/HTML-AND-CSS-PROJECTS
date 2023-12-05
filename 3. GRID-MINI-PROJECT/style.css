@@ -234,6 +234,7 @@ h1 {
   img{
     height: 100%;
     padding: 1rem;
+    object-fit: cover;
   }
   .tiles-img-1 {
     grid-area: a;
