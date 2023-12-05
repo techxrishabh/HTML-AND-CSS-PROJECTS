@@ -196,5 +196,7 @@ nav ul li a:hover {
     column-gap: 50px;
   }
 
-  
+}
+h1{
+  font-weight: 400;
 }
