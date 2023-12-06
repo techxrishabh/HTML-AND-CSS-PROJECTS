@@ -111,7 +111,7 @@ nav ul li a:hover {
     max-width: 1170px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
   .main-navbar {
     text-align: center;
@@ -207,7 +207,7 @@ h1 {
 .tiles-header {
   margin: 40px 0;
 }
-.tiles-layout{
+.tiles-layout {
   width: 80vw;
   margin: 0 auto;
   max-width: 1170px;
@@ -236,7 +236,7 @@ h1 {
       "e f f f"
       "e g h i";
   }
-  img{
+  img {
     height: 100%;
     padding: 1rem;
     object-fit: cover;
@@ -274,24 +274,73 @@ h1 {
                 LAYOUTS       
 ======================================== */
 
-.header-text{
+.header-text {
   color: white;
   background-color: var(--primaryColor);
 }
-article{
+article {
+  height: 50vh;
   padding: 1rem;
 }
-footer{
+footer {
   background-color: var(--mainBlack);
   color: var(--mainWhite);
   text-align: center;
   padding: 0.5rem;
 }
-.footer{
+.footer {
   background-color: var(--primaryColor);
   padding: 0.5rem;
   color: var(--mainWhite);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
+}
+span{
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .nav-var ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header-layout {
+    grid-template-columns: [start] 200px [col-1-end] 1fr [col-2-end] 50px [end];
+    grid-template-rows: [start] auto [row-1-end] 1fr [row-2-end] auto [end];
+  }
+  .header-text {
+    grid-column: start/end;
+    grid-row: start/row-1-end;
+  }
+  .nav-var {
+    grid-column: start/col-1-end;
+    grid-row: row-1-end/row-2-end;
+  }
+  article {
+    grid-column: col-1-end/col-2-end;
+    grid-row: row-1-end/row-2-end;
+  }
+  footer {
+    grid-column: start/end;
+    grid-template-rows: row-2-end/end;
+  }
+  .nav-var ul {
+    grid-template-columns: 1fr;
+    min-height: 100%;
+    align-items: center;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    align-items: center;
+    background: var(--darkGrey);
+    grid-column: col-2-end/end;
+    grid-row: row-1-end/row-2-end;
+    min-height: 100%;
+  }
 }
