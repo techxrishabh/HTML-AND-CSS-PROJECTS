@@ -237,9 +237,13 @@ h1 {
       "e g h i";
   }
   img {
+    /* height: 100%; */
+    /* padding: 1rem; */
+    object-fit: cover;
+  }
+  .center-img img{
     height: 100%;
     padding: 1rem;
-    object-fit: cover;
   }
   .tiles-img-1 {
     grid-area: a;
