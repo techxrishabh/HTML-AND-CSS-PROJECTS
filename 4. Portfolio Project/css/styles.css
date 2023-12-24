@@ -247,7 +247,7 @@ Sidebar
   transition: var(--transition);
   transform: translateX(-100%);
 }
-#show-sidebar{
+.show-sidebar{
   transform: translate(0);
 }
 .sidebar-links a:hover {
