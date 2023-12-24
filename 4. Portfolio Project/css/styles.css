@@ -245,7 +245,10 @@ Sidebar
   /* align-items: center;
   justify-content: center; */
   transition: var(--transition);
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
+}
+#show-sidebar{
+  transform: translate(0);
 }
 .sidebar-links a:hover {
   color: var(--clr-primary-5);
