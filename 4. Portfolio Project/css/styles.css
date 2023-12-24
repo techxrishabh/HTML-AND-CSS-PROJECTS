@@ -226,6 +226,15 @@ Navbar
     align-items: center;
   }
 }
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  z-index: 2;
+  box-shadow: var(--light-shadow);
+}
 
 /*
 =============== 
@@ -247,7 +256,7 @@ Sidebar
   transition: var(--transition);
   transform: translateX(-100%);
 }
-.show-sidebar{
+.show-sidebar {
   transform: translate(0);
 }
 .sidebar-links a:hover {
@@ -277,7 +286,7 @@ Sidebar
 .icons li a {
   color: var(--clr-grey-1);
 }
-.close-btn{
+.close-btn {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -288,10 +297,10 @@ Sidebar
   transition: var(--transition);
   cursor: pointer;
 }
-.close-btn:hover{
+.close-btn:hover {
   color: red;
 }
-.icons li a:hover{
+.icons li a:hover {
   color: var(--clr-primary-5);
 }
 /*
@@ -299,6 +308,37 @@ Sidebar
 Hero
 ===============
 */
+
+.hero {
+  height: calc(100vh - 5rem);
+  background-color: var(--clr-primary-10);
+  text-transform: capitalize;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 5rem;
+}
+
+.hire-me {
+  text-transform: uppercase;
+  background: var(--clr-primary-5);
+  color: var(--clr-primary-1);
+  letter-spacing: var(--spacing);
+  padding: 0.375rem 0.75rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: var(--radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+/* .hero-icons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+} */
+
 /* underline added to globals */
 
 /*
