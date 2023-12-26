@@ -411,6 +411,19 @@ Hero
 About
 ===============
 */
+
+.about{
+  padding: 80px 0;
+}
+.about-img{
+  border-radius: var(--radius);
+}
+.about-heading{
+  padding-bottom: 40px;
+}
+.about-info{
+  padding-top: 40px;
+}
 /* section title added to globals */
 
 /*
