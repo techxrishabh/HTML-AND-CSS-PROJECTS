@@ -439,7 +439,6 @@ About
     left: 6rem;
     border-radius: var(--radius);
   }
-  
 }
 /* section title added to globals */
 
@@ -448,17 +447,22 @@ About
 Services
 ===============
 */
-.service-heading{
+.service-heading {
   margin: 50px 0;
+  text-align: center;
+
 }
-.service{
+.service {
   background-color: var(--clr-grey-10);
   padding: 80px 0;
-}
-.service-heading .underline{
   margin: 0 auto;
 }
-.web-dev, .web-design, .app-design{
+.service-heading .underline {
+  margin: 0 auto;
+}
+.web-dev,
+.web-design,
+.app-design {
   text-align: center;
   background-color: var(--clr-white);
   padding: 68px 24px;
@@ -466,22 +470,43 @@ Services
   border-radius: var(--radius);
   margin-top: 50px;
 }
-.service-icon{
+.service-icon {
   font-weight: bold;
   font-size: 3rem;
   margin-bottom: 40px;
   margin-top: 20px;
-
 }
-.underline-service{
+.underline-service {
   width: 4rem;
   height: 0.2rem;
   margin: 0 auto;
   margin-bottom: 30px;
 }
-p{
+p {
   font-size: 1.4rem;
 }
+.service-center{
+   width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (min-width: 676px) {
+  .service-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .service-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* small screen layout setup */
 /* bg-grey in globals */
 
