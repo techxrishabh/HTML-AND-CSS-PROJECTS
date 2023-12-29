@@ -492,6 +492,13 @@ p {
   display: grid;
   place-items: center;
 }
+.service-hover:hover{
+  color: var(--clr-white);
+  background-color: var(--clr-primary-5);
+}
+.service-hover:hover p{
+  color: var(--clr-white);
+}
 
 @media screen and (min-width: 676px) {
   .service-info{
