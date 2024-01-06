@@ -787,19 +787,19 @@ Skills
   left: 80%;
 }
 @media screen and (min-width: 768px) {
-  .skills-center{
+  .skills-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
   }
 }
-.section-skills{
+.section-skills {
   padding: 80px 0;
 }
-.section-title{
+.section-title {
   margin-bottom: 80px;
 }
-.skills-center h2{
+.skills-center h2 {
   margin-bottom: 20px;
   color: var(--clr-primary-1);
 }
@@ -809,21 +809,21 @@ Timeline
 ===============
 */
 
-.timeline-center{
+.timeline-center {
   width: 80vw;
   margin: 0 auto;
   max-width: 40rem;
 }
-.timeline-item{
+.timeline-item {
   border: 2px solid var(--clr-primary-5);
   margin: 0;
   padding: 4rem 2rem;
   position: relative;
 }
-.timeline p{
+.timeline p {
   margin-bottom: 0;
 }
-.timeline-item:nth-child(even){
+.timeline-item:nth-child(even) {
   border-left: 2px dashed var(--clr-primary-5);
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
@@ -833,9 +833,8 @@ Timeline
   border-bottom: 0;
   border-top: 2px dashed var(--clr-primary-5);
   border-bottom: 2px dashed var(--clr-primary-5);
-
 }
-.timeline-item:nth-child(odd){
+.timeline-item:nth-child(odd) {
   border-right: 2px dashed var(--clr-primary-5);
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
@@ -844,21 +843,17 @@ Timeline
   border-left: 0;
   border-top: 0;
   border-bottom: 2px dashed var(--clr-primary-5);
-  
-
 }
-.timeline-item:first-child{
-
+.timeline-item:first-child {
   border-top-right-radius: 0;
   border-left: 0;
-  
 }
-.timeline-item:last-child{
+.timeline-item:last-child {
   border-bottom-left-radius: 0;
   border-bottom: 0;
   border-right: 0;
 }
-.number{
+.number {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -873,10 +868,10 @@ Timeline
   color: var(--clr-primary-1);
   font-weight: bold;
 }
-.timeline-item:nth-child(even) .number{
+.timeline-item:nth-child(even) .number {
   left: 0;
 }
-.timeline-item:nth-child(odd) .number{
+.timeline-item:nth-child(odd) .number {
   right: 0;
   transform: translate(50%, -50%);
 }
@@ -885,7 +880,76 @@ Timeline
 Blog
 ===============
 */
+.section-blog {
+  background: var(--clr-grey-10);
+}
+.blog {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 80px 0;
+}
+.card {
+  height: 27rem;
+  position: relative;
+  /* Talk later */
+  perspective: 1500px;
+}
+.card-front{
+  background-color: var(--clr-white);
+  transition: all 2s linear;
+}
+.card-side{
+  backface-visibility: hidden;
+  transition: all 2s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-back{
+  background-color: var(--clr-primary-10);
+  transition: all 2s linear;
+  transform: rotateY(180deg);
+  display: grid;
+  place-items: center;
 
+}
+.card:hover .card-front{
+  transform: rotateY(-180deg);
+}
+.card:hover .card-back{
+  transform: rotateY(0);
+}
+.card-front img{
+  height: 13rem;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.card-footer img{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card-footer p{
+  margin-bottom: 0;
+  text-transform: uppercase;
+  justify-self: end;
+  color: var(--clr-primary-5);
+  font-size: 0.85rem;
+}
+.card-info{
+  padding: 1rem 1.5rem;
+}
+.blog-center{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 3rem 1rem;
+}
 /*
 =============== 
 Footer
