@@ -637,10 +637,10 @@ Projects
       "a b b"
       "a c d";
   }
-  .project-img{
+  .project-img {
     height: 100%;
   }
-  .project{
+  .project {
     height: 100%;
   }
   .project-1 {
@@ -660,7 +660,7 @@ Projects
     height: 100%;
   }
 }
-.projects{
+.projects {
   margin: 80px 0;
 }
 
@@ -669,13 +669,13 @@ Projects
 Connect
 ===============
 */
-.connect{
+.connect {
   position: relative;
   min-height: 40vh;
   padding: 10rem 0 5rem 0;
   margin: 5rem 0;
 }
-.video-container{
+.video-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -684,7 +684,7 @@ Connect
   object-fit: cover;
   z-index: -2;
 }
-.connect::after{
+.connect::after {
   content: "";
   position: absolute;
   top: 0;
@@ -696,22 +696,29 @@ Connect
   background: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
-.video-banner{
+.video-banner {
   background: var(--clr-primary-10);
   padding: 3rem 5rem 12rem 5rem;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
 }
-.connect{
+.connect {
   display: grid;
   place-items: center;
   text-align: center;
   clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
 }
-.video-text{
+.video-text {
   max-width: 30rem;
 }
-.video-banner .underline{
+.video-banner .underline {
   margin: 0 auto;
   margin-bottom: 1rem;
 }
@@ -720,6 +727,82 @@ Connect
 Skills
 ===============
 */
+.skills-center {
+  width: 90vw;
+  /* max-width: 1170px; */
+  margin: 0 auto;
+}
+.section-title {
+  text-align: center;
+}
+.section-title .underline {
+  margin: 0 auto;
+}
+.section-skills {
+  background-color: var(--clr-primary-9);
+}
+.skills h2 {
+  margin: 1.5rem 0;
+  color: var(--clr-primary-1);
+}
+.skills {
+  margin-bottom: 1.25rem;
+}
+.skills p {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: var(--clr-primary-1);
+}
+.skill-container {
+  background: var(--clr-white);
+  height: 1rem;
+  width: 100%;
+  border-radius: var(--radius);
+  position: relative;
+}
+.skill-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--clr-primary-5);
+  width: 50%;
+  height: 100%;
+}
+.value-70 {
+  width: 70%;
+}
+.value-80 {
+  width: 80%;
+}
+.skill-test {
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.skill-test-70 {
+  left: 70%;
+}
+.skill-test-80 {
+  left: 80%;
+}
+@media screen and (min-width: 768px) {
+  .skills-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+.section-skills{
+  padding: 80px 0;
+}
+.section-title{
+  margin-bottom: 80px;
+}
+.skills-center h2{
+  margin-bottom: 20px;
+  color: var(--clr-primary-1);
+}
 /*
 =============== 
 Timeline
