@@ -729,7 +729,10 @@ Connect
   margin-bottom: 1rem;
 }
 .please{
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+.video-text{
+  font-size: 1.2rem;
 }
 /*
 =============== 
