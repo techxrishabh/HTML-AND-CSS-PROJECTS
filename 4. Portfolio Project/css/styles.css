@@ -710,7 +710,7 @@ Connect
     100% 0%,
     100% 75%,
     75% 75%,
-    75% 100%,
+    75% 95%,
     50% 75%,
     0% 75%
   );
@@ -726,6 +726,9 @@ Connect
 }
 .video-banner .underline {
   margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.please{
   margin-bottom: 1rem;
 }
 /*
