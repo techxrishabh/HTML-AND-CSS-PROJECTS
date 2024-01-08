@@ -983,6 +983,9 @@ Footer
   color: var(--clr-primary-5);
 
 }
+footer P{
+  font-size: 1.2rem;
+}
 /*
 =============== 
 Single Page
