@@ -965,6 +965,24 @@ Blog
 Footer
 ===============
 */
+
+.footer{
+  background-color: #222;
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
+}
+.social-icons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.social-icons li a{
+  color: var(--clr-primary-5);
+
+}
 /*
 =============== 
 Single Page
