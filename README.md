@@ -37,7 +37,7 @@
 
 <h4 align="center">
   
-  [View Code](https://github.com/techxrishabh/HTML-AND-CSS-PROJECTS/tree/master/3.%20GRID-MINI-PROJECT) | [Live Preview](https://659caebc893b0c52b627f95a--merry-longma-59cf67.netlify.app/) 
+  [View Code](https://github.com/techxrishabh/HTML-AND-CSS-PROJECTS/tree/master/3.%20GRID-MINI-PROJECT) | [Live Preview](https://659cd18b1ae19766f3b83132--fancy-stroopwafel-c0ddb0.netlify.app/) 
   
 </h4>
 <br>
