@@ -291,7 +291,7 @@ h1 {
         rgb(44, 174, 186, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url("/2.BLACKROADS-TOUR-COMPANY/img/main.jpeg");
+      url("../img/main.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
