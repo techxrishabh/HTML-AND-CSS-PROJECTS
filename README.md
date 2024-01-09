@@ -51,26 +51,22 @@
 <!-- =============================== END OF GRID MINI PROJECT  =========================================================================================== ============================== =-->
 
 
+<!-- =============================== PORTFOLIO PROJECT  =========================================================================================== ============================== =-->
+
+<h2 align="center"> ⭐ PORTFOLIO-PROJECT ⭐ </h2>
+<h3 align="center"> ( CSS-GRID, ANIMATION ) </h3>
+
+<h4 align="center">
+  
+  [View Code](https://github.com/techxrishabh/HTML-AND-CSS-PROJECTS/tree/master/4.%20Portfolio%20Project) | [Live Preview](http://127.0.0.1:3000/4.%20Portfolio%20Project/index.html) 
+  
+</h4>
+<br>
+
+![screencapture-html-css-portfolio-css-grid-project-netlify-app-2024-01-05-22_21_01](https://github.com/techxrishabh/HTML-AND-CSS-PROJECTS/assets/132020097/7a65a137-c773-4b30-8fd7-560ea1891163)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- =============================== END OF GRID MINI PROJECT =========================================================================================== ============================== =-->
+<!-- =============================== END OF PORTFOLIO PROJECT =========================================================================================== ============================== =-->
 
 
